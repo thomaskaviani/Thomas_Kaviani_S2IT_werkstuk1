@@ -1,19 +1,23 @@
 //
-//  ViewControllerMap.swift
+//  ViewControllerImage.swift
 //  Werkstuk1
 //
-//  Created by KAVIANI Thomas (s) on 25/05/2018.
+//  Created by KAVIANI Thomas (s) on 31/05/2018.
 //  Copyright © 2018 KAVIANI Thomas (s). All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerMap: UIViewController {
+class ViewControllerImage: UIViewController {
 
+    var persoon = Persoon()
+    
+    @IBOutlet weak var myImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.myImage.image = UIImage(named: persoon.image!)!
+        
     }
 
     override func didReceiveMemoryWarning() {

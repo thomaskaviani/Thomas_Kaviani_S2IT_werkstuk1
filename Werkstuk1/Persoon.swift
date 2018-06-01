@@ -23,6 +23,7 @@ class Persoon {
         self.naam = naam;
         self.voornaam = voornaam;
         self.adres = adres;
+        self.telefoon = telefoon;
         self.gpsCoordinaten = CLLocationCoordinate2D(latitude: lat, longitude: long);
         self.image = img;
     }
