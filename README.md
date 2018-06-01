@@ -1,1 +1,2 @@
-# Thomas_Kaviani_S2IT_werkstuk1
+# Werkstuk 1 - Mobile iOS
+## Thomas Kaviani 2SIT
