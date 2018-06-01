@@ -13,28 +13,18 @@ import MapKit
 
 class Database{
     
-    var dataAray = [Persoon]()
+    var data = [Persoon]()
     
     func getAll() -> Array<Persoon>{
         
-        let persoon1 = Persoon(naam: "Thomas", voornaam: "Kaviani", adres: "Kasteelbrakelsesteenweg 379 1502 Lembeek", telefoon: "0471825154", lat: 50.701852, long: 4.244945, img: "thomas_image" )
-        dataAray.append(persoon1)
-
-        let persoon2 = Persoon(naam: "Osama", voornaam: "Bin Laden", adres: "Lampstraat 47 1500 Halle", telefoon: "0469882356", lat: 50.740922, long: 4.228299, img: "osama_image")
-        dataAray.append(persoon2)
+        data.append(Persoon(naam: "Kaviani", voornaam: "Thomas", telefoon: "+32471825154", adres: Adres(straat:"Kasteelbrakelsesteenweg", nummer: "379", postcode: "1502", stad: "Lembeek", land: "België", lat: 50.701677, long: 4.245057), img: "thomas_image"));
         
-        let persoon3 = Persoon(naam: "Sadam", voornaam: "Hoessein", adres: "Alsembergsesteenweg 45 1654 Dworp", telefoon: "04568097", lat: 50.728810, long: 4.301991, img: "sadam_image")
-        dataAray.append(persoon3)
-
-        let persoon4 = Persoon(naam: "George", voornaam: "Bush", adres: "Kerkstraat 2 1000 Brussel", telefoon: "0466666666", lat: 38.897664, long: -77.035263, img: "bush_image")
-        dataAray.append(persoon4)
-
-        let persoon5 = Persoon(naam: "Barrack", voornaam: "Obama", adres: "15th Street NW 20004 Washington DC", telefoon: "078542156", lat: 38.897664, long: -77.035263, img: "obama_image")
-        dataAray.append(persoon5)
-
-        let persoon6 = Persoon(naam: "Jezus", voornaam: "Christus", adres: "Heaven", telefoon: "333333333", lat: 31.673797, long: 35.181847, img: "jezus_image")
-        dataAray.append(persoon6)
+        data.append(Persoon(naam: "Bin Laden", voornaam: "Osama", telefoon: "+32470825678", adres: Adres(straat:"Meir", nummer: "4", postcode: "2000", stad: "Brugge", land: "België", lat: 51.210533, long: 3.239931), img: "osama_image"));
+        data.append(Persoon(naam: "Hoessein", voornaam: "Sadam", telefoon: "+32471353657", adres: Adres(straat:"Kadhimiya", nummer: "2", postcode: "31003", stad: "Bagdad", land: "Irak", lat: 33.385802, long: 44.343669), img: "sadam_image"));
+        data.append(Persoon(naam: "Bush", voornaam: "George W.", telefoon: "+32471895472", adres: Adres(straat:"15th Street NW", nummer: "11", postcode: "66666", stad: "Washington DC", land: "België", lat: 38.897309, long: -77.038973), img: "bush_image"));
+        data.append(Persoon(naam: "Obama", voornaam: "Barrack", telefoon: "+32471984268", adres: Adres(straat:"Meir", nummer: "11", postcode: "2000", stad: "Antwerpen", land: "Borgerocco", lat: 51.213178, long: 4.331575), img: "obama_image"));
+        data.append(Persoon(naam: "Christus", voornaam: "Jezus", telefoon: "+32471751235", adres: Adres(straat:"Kasteelbrakelsesteenweg", nummer: "379", postcode: "3333", stad: "Nazaret", land: "Palestina", lat: 32.703305, long: 35.299563), img: "jezus_image"));
         
-        return dataAray;
+        return data;
     }
 }

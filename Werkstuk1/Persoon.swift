@@ -14,26 +14,23 @@ class Persoon {
     
     var naam: String?
     var voornaam: String?
-    var adres: String?
+    var adres: Adres?
     var telefoon: String?
-    var gpsCoordinaten: CLLocationCoordinate2D?
     var image: String?
     
-    init(naam: String, voornaam: String, adres: String, telefoon: String, lat: Double, long: Double, img: String){
+    init(naam: String, voornaam: String, telefoon: String, adres:Adres , img: String){
         self.naam = naam;
         self.voornaam = voornaam;
         self.adres = adres;
         self.telefoon = telefoon;
-        self.gpsCoordinaten = CLLocationCoordinate2D(latitude: lat, longitude: long);
         self.image = img;
     }
     
     init(){
-        self.naam = "Kaviani"
-        self.voornaam = "Thomas"
-        self.adres = "Lampstraat 47 1500 Halle"
-        self.telefoon = "0471825154"
-        self.gpsCoordinaten = CLLocationCoordinate2D(latitude: 50.748412, longitude: 4.234559)
+        self.naam = "Dummy"
+        self.voornaam = "Dumb"
+        self.telefoon = "0400000000"
         self.image = "default"
+        self.adres = Adres()
     }
 }
