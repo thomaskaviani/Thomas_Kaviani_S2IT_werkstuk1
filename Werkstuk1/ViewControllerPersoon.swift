@@ -25,6 +25,8 @@ class ViewControllerPersoon: UIViewController, MKMapViewDelegate, CLLocationMana
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor(red: 197/255.0, green: 217/255.0, blue: 249/255.0, alpha: 1.0)
+        
         self.adres.text = (persoon.adres?.straat)! + " " + (persoon.adres?.nummer)! + ", " + (persoon.adres?.postcode)! + " " + (persoon.adres?.stad)! + " " + (persoon.adres?.land)!
         
         self.telefoon.text = persoon.telefoon!
